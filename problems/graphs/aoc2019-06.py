@@ -8,7 +8,6 @@ import sys
 import os
 import re
 
-
 def part1(orbits):
     """
     Solves Part 1 (see problem statement for more details)
@@ -19,9 +18,20 @@ def part1(orbits):
 
     Returns an integer
     """
-    ### Replace with your code
-    return None
+    objects = orbits.keys()
 
+    total = 0
+
+    for object in objects:
+        total += helper(object, orbits)
+
+    return total
+
+def helper(object, orbits):
+    if orbits[object] == None:
+        return 0
+    else:
+        return 1 + helper(orbits[object], orbits)
 
 def part2(orbits):
     """
