@@ -28,8 +28,8 @@ def part1(orbits):
     return total
 
 def helper(object, orbits):
-    if orbits[object] == None:
-        return 0
+    if orbits[object] == COM:
+        return 1
     else:
         return 1 + helper(orbits[object], orbits)
 
