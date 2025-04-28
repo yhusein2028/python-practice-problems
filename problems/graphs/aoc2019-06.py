@@ -28,7 +28,7 @@ def part1(orbits):
 
     return total
     
-def helper(object, oribits):
+def helper(object, orbits):
     if orbits[object] == None:
         return 0
     else:
@@ -80,4 +80,4 @@ if __name__ == "__main__":
     print(f"Part 1:", part1(orbits))
     
 
-    print(f"Part 2:", part2(orbits))
+    #print(f"Part 2:", part2(orbits))
