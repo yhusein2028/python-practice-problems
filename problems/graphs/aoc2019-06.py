@@ -79,5 +79,5 @@ if __name__ == "__main__":
 
     print(f"Part 1:", part1(orbits))
     
-    # Uncomment the following line when you're ready to work on Part 2
-    #print(f"Part 2:", part2(orbits))
+
+    print(f"Part 2:", part2(orbits))
